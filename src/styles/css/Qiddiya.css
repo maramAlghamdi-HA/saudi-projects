@@ -1,0 +1,62 @@
+.carousel {
+    width:1200px;
+    height:600px;
+    margin: auto;
+   
+
+  }
+
+  @media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+   
+}
+
+#imgAbout{
+  width: 560px; 
+  height: 400px;
+  border-radius: 40px;
+  margin: auto;
+ 
+}
+@media (max-width: 640px) {
+  #imgAbout{
+    width: 400px; 
+    height:300px;
+  }
+ 
+}
+
+
+
+.QiddiyaTimelineBackGround{
+  background-color: aliceblue;
+  margin-top: 60px;
+  padding: 50px;
+}
+.QiddiyaImage{
+  width:170px;
+  height:180px;
+}
+#Discover{
+  background-color: aliceblue;
+  margin-top: 60px;
+  padding: 60px;
+ 
+}
+.HeadingLight{
+  color: white;
+}
+.subheadingLight{
+  color: #b4d0ee98;
+  
+}
+
+.subheadingDark{
+  color: #336699;  
+font-size: 20px;
+text-align: center;
+}
+

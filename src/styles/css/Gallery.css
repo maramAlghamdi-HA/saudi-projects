@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.hero-image {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  margin-bottom: 50px;
+  max-height: 400px;
+  color: rgb(6, 116, 97);
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+  transform: translate(0px, 0px); 
+}
+.hero-image-img {
+  
+  width:50px;
+  height:50px;
+}
+ 
+.hero-image > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 310px;
+  max-width: 310px;
+}
+.hero-image > div div {
+  font-size: 40px;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.hero-image > div div .span {
+  display: block;
+}
+.hero-image > div.text-top {
+  border-bottom: 0.7vmin solid #165219;
+  top: 0;
+}
+.hero-image > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+   
+}
+.hero-image > div.text-top div span:first-child {
+  color: #165219;
+}
+.hero-image> div.text-bottom {
+  bottom: 0;
+}
+.hero-image > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+@media (max-width: 800px){
+  .hero-image-img {
+    margin-top: 100px;
+    margin-left: 30px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    
+  }
+  
+}
+ 
+  
